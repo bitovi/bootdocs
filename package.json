@@ -1,0 +1,11 @@
+{
+  "name": "bootdocs",
+  "version": "0.0.1",
+  "description": "Bootstrap documentation generated with DocumentJS",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "documentjs": "^0.3.0"
+  }
+}
