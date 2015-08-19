@@ -6,12 +6,11 @@
 * Styles on base-level tags should live here, including table and form styles. Styles for specific elements or helper classes should go in their separate, respective, files. Typography is housed in its own typography file due to the typical complexity. Global styles, or styles on the body/html should live here.
 **/
 * {
-  font-family: @defaultFontFamily;
-  font-weight: @defaultFontWeight;
+  font-family: @font-family;
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background: @pageBackground;
+  background: @page-background;
 }
 body.style-demo {
   background: @clear; 
@@ -22,37 +21,11 @@ body.style-demo {
 }*/
 
 /**
-* @styles forms Forms
-*
-* @demo demos/forms.html
-**/
-/*input,textarea{
-  font-size:1em;
-  padding:5px;
-}
-input[type="submit"]{
-  cursor:pointer;
-}
-:focus{
-  outline:none;
-}
-form label{
-  display: block;
-  margin-bottom: 5px;
-}
-form input, form textarea, form select {
-  display: block;
-  margin-bottom: 10px;
-}
-option{
-  padding:1px 3px;
-}
-
-/**
 * @styles table Tables
 *
 * @demo demos/tables.html
 **/
+
 /*table {
   border-spacing:0;
   margin-bottom:21px;

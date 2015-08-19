@@ -6,11 +6,10 @@
 * Variables hold all sorts of site-wide visual configurations. This site has color palettes, logo images, and font declarations set, which are demo'd throughout this live style guide.
 **/
 
-// Variables used to set the font appearance.
-
-@defaultFontFamily: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-@defaultFontWeight: 300;
-
+@font-family: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+@font-weight: 300;
+@font-size: 16px;
+@line-height: @font-size*1.4;
 
 /**
 * @styles color-palette Color Palette
@@ -19,42 +18,43 @@
 * Variables used to define the site's color palette.
 *
 **/
-@night: #000000; 
-@darkSkies: #484848; 
-@thunderStorm: #706f70;  
-@cloud: #999999; 
-@haze: #cccccc;  
-@fog: #eae9e9; 
+@night: #000; 
+@darkSkies: #3d3d3d; 
+@thunderStorm: #767676;  
+@cloud: #c6c6c6; 
+@haze: #dedede;   
 @clear: #ffffff; 
-@nigthRain: #165489;
-@rain: #1f54c6; 
+
+@nightRain: #003550;
+@rain: #0179b5; 
+
 @sunrise: #f7f8c3; 
 @sunset: #d9534f;
 
 
 // Variables used to define color on text elements.
 
-@colorHeader: @darkSkies;
-@colorLinks: @rain;
-@colorCode: @sunrise;
-@colorNav: @darkSkies;
-@colorSignature: @darkSkies;
-@fontColorParamsReturns: @fog;
+@color-header: @darkSkies;
+@color-links: @rain;
+@color-code: @haze;
+@color-nav: @darkSkies;
+@color-signature: @darkSkies;
+@font-color-params-returns: @haze;
 
 
 // Variables used to set the color on containers and other elements.
 
-@pageBackground: @fog;
-@sidebarBackground: @haze;
-@colorTags: @darkSkies;
-@footerHeight: 80px;
-@headerHeight: 54px;
-@colorParamsReturns: @darkSkies;
+@page-background: @clear;
+@sidebar-background: @clear;
+@color-tags: @thunderStorm;
+@footer-height: 80px;
+@header-height: 54px;
+@color-params-returns: @darkSkies;
 
 
 // Variables used to set the color on code syntax.
 
-@pp-bg: @fog;
+@pp-bg: @haze;
 
 @str-color: #dd1144;
 @kwd-color: #333333;
@@ -93,6 +93,10 @@
 @logoFooter: "../img/logo-grey.svg";
 @logoWidth: 170px;
 
+// Variables used to space and layout
+
+@gutter: 30px;
+@border-radius: 4px;
 
 
  
