@@ -1,5 +1,7 @@
 {
     "sites": {
+      "templates": "themes/classic",
+      "static": "themes/classic",
         "styles": {
             "glob": "less/**/*.{css,less,md}",
             "dest": "styleguide",
