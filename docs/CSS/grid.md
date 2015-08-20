@@ -17,8 +17,3 @@ Grid systems are used for creating page layouts through a series of rows and col
 - If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 - Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a `.col-lg-*` class is not present.
 - Look to the examples for applying these principles to your code.
-
-
-```
-
-```
