@@ -1,11 +1,13 @@
 {
-    "sites": {
-      "templates": "themes/classic",
-      "static": "themes/classic",
-        "styles": {
-            "glob": "{less,docs}/**/*.{css,less,md}",
-            "dest": "styleguide",
-            "parent": "styles"
-        }
+  "siteDefaults": {
+      "templates": "themes/default/templates",
+      "static": "themes/default/static"
+    },
+  "sites": {
+    "styles": {
+        "glob": "{less,docs}/**/*.{css,less,md}",
+        "dest": "styleguide",
+        "parent": "styles"
     }
+  }
 }
