@@ -1,9 +1,76 @@
 /**
   * @stylesheet glyphicons.less Glyphicons
-  * @parent Styles
+  * @parent components
   *
   * @description
-  * Includes over 250 glyphs in font format from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to Glyphicons whenever possible.
+  * Includes over 250 glyphs in font format from the Glyphicon Halflings set.
+  * Glyphicons Halflings are normally not available for free, but their creator
+  * has made them available for Bootstrap free of cost. As a thank you, we only
+  * ask that you include a link back to Glyphicons whenever possible.
+  * ***
+  * ## How to use
+  * For performance reasons, all icons require a base class and individual icon
+  * class. To use, place the following code just about anywhere. Be sure to leave
+  * a space between the icon and text for proper padding.
+  * #### Don't mix with other components
+  * Icon classes cannot be directly combined with other components. They should
+  * not be used along with other classes on the same element. Instead, add a
+  * nested <span> and apply the icon classes to the <span>.
+  * #### Only for use on empty elements
+  * Icon classes should only be used on elements that contain no text content
+  * and have no child elements.
+  * #### Changing the icon font location
+  * Bootstrap assumes icon font files will be located in the ../fonts/ directory,
+  * relative to the compiled CSS files. Moving or renaming those font files means
+  * updating the CSS in one of three ways:
+  * * Change the @icon-font-path and/or @icon-font-name variables in the source Less files.
+  * * Utilize the relative URLs option provided by the Less compiler.
+  * * Change the url() paths in the compiled CSS.
+  * #### Accessible icons
+  * Modern versions of assistive technologies will announce CSS generated content,
+  * as well as specific Unicode characters. To avoid unintended and confusing output
+  * in screen readers (particularly when icons are used purely for decoration),
+  * we hide them with the aria-hidden="true" attribute.
   *
-  * @demo /less/demos/glyphicons/demo.html
+  * If you're using an icon to convey meaning (rather than only as a decorative element),
+  * ensure that this meaning is also conveyed to assistive technologies – for instance,
+  * include additional content, visually hidden with the .sr-only class.
+  *
+  * If you're creating controls with no other text (such as a `<button>` that only
+  * contains an icon), you should always provide alternative content to identify
+  * the purpose of the control, so that it will make sense to users of assistive
+  * technologies. In this case, you could add an aria-label attribute on the control itself.
+  *
+  * @demo less/demos/glyphicons/demo.html
+  * ***
+  **/
+  /**
+  * @styles glyphicons-example Examples
+  * Use them in buttons, button groups for a toolbar, navigation,
+  * or prepended form inputs.
+  ```
+  * <button type="button" class="btn btn-default" aria-label="Left Align">
+  * <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+  * </button>
+  *
+  * <button type="button" class="btn btn-default btn-lg">
+  *  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+  * </button>
+  ```
+  @demo less/demos/glyphicons/glyphicons-example/demo.html
+  **/
+  /**
+  * @styles glyphicons-example-2
+  * An icon used in an alert to convey that it's an error message, with
+  * additional .sr-only text to convey this hint to users of assistive technologies.
+  * ###### Example
+  ```
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    Enter a valid email address
+  </div>
+  ```
+  @demo less/demos/glyphicons/glyphicons-example-2/demo.html
+
   **/
