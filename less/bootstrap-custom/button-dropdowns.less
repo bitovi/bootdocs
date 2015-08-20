@@ -1,9 +1,40 @@
 /**
   * @stylesheet button-dropdowns.less Button Dropdowns
-  * @parent Styles
+  * @parent components 3
   *
   * @description
   * Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.
   *
-  * @demo less/demos/button-dropdowns/demo.html
+  * ##### Plugin dependency
+  * Button dropdowns require the dropdown plugin to be included in your
+  * version of Bootstrap.
+  **/
+  /**
+  @styles button-dropdowns-single-button
+  @parent button-dropdowns.less 0
+  * ## Single button dropdowns
+  * Turn a button into a dropdown toggle with some basic markup changes.
+  * @demo demos/button-dropdowns/single-button/demo.html
+  **/
+  /**
+  @styles button-dropdowns-split-button
+  @parent button-dropdowns.less 1
+  * ## Split button dropdowns
+  * Similarly, create split button dropdowns with the same markup changes,
+  * only with a separate button.
+  * @demo demos/button-dropdowns/split-button/demo.html
+  **/
+  /**
+  @styles button-dropdowns-sizing
+  @parent button-dropdowns.less 2
+  * ## Sizing
+  * Button dropdowns work with buttons of all sizes.
+  * @demo demos/button-dropdowns/sizing/demo.html
+  **/
+  /**
+  @styles button-dropdowns-dropup
+  @parent button-dropdowns.less 3
+  * ## Dropup Variation
+  * Trigger dropdown menus above elements by adding .dropup to the parent.
+  * @demo demos/button-dropdowns/dropup/demo.html
   **/
