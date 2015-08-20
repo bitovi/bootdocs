@@ -1,0 +1,37 @@
+/**
+* @stylesheet jumbotron.less Jumbotron
+* @parent components 12
+*
+* @description
+* Easily highlight new or unread items by adding a ```<span class="badge">``` to links, Bootstrap navs, and more.
+*
+* @demo demos/jumbotron/demo.html
+*
+```
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+```
+*
+* To make the jumbotron full width, and without rounded corners, place it outside all ```.containers``` and instead add a ```.container``` within.
+*
+```
+<div class="jumbotron">
+  <div class="container">
+    ...
+  </div>
+</div>
+```
+*
+**/
+
+// Jumbotron
+
+@jumbotron-padding:              30px;
+@jumbotron-color:                inherit;
+@jumbotron-bg:                   @gray-lighter;
+@jumbotron-heading-color:        inherit;
+@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+@jumbotron-heading-font-size:    ceil((@font-size-base * 4.5));
