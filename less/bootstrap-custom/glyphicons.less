@@ -1,6 +1,6 @@
 /**
   * @stylesheet glyphicons.less Glyphicons
-  * @parent components
+  * @parent components 0
   *
   * @description
   * Includes over 250 glyphs in font format from the Glyphicon Halflings set.
@@ -41,36 +41,31 @@
   * the purpose of the control, so that it will make sense to users of assistive
   * technologies. In this case, you could add an aria-label attribute on the control itself.
   *
-  * @demo less/demos/glyphicons/demo.html
+  * @demo demos/glyphicons/demo.html
   * ***
   **/
   /**
   * @styles glyphicons-example Examples
   * Use them in buttons, button groups for a toolbar, navigation,
   * or prepended form inputs.
-  ```
-  * <button type="button" class="btn btn-default" aria-label="Left Align">
-  * <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-  * </button>
-  *
-  * <button type="button" class="btn btn-default btn-lg">
-  *  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-  * </button>
-  ```
-  @demo less/demos/glyphicons/glyphicons-example/demo.html
+  @demo demos/glyphicons/glyphicons-example/demo.html
   **/
   /**
   * @styles glyphicons-example-2
   * An icon used in an alert to convey that it's an error message, with
   * additional .sr-only text to convey this hint to users of assistive technologies.
   * ###### Example
-  ```
-  <div class="alert alert-danger" role="alert">
-    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-    <span class="sr-only">Error:</span>
-    Enter a valid email address
-  </div>
-  ```
-  @demo less/demos/glyphicons/glyphicons-example-2/demo.html
+  @demo demos/glyphicons/glyphicons-example-2/demo.html
 
   **/
+
+  //== Iconography
+  //
+  //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+  //** Load fonts from this directory.
+  @icon-font-path:          "../fonts/";
+  //** File name for all font files.
+  @icon-font-name:          "glyphicons-halflings-regular";
+  //** Element ID within SVG icon file.
+  @icon-font-svg-id:        "glyphicons_halflingsregular";
