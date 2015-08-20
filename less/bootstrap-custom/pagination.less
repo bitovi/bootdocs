@@ -5,12 +5,48 @@
 * @description
 * Provide pagination links for your site or app with the multi-page pagination component, 
 * or the simpler [pager](/pager.html) alternative.
+*
+**/
 
-* ## Default pagination
+/**
+* @styles default-pagination Default pagination
+* @parent pagination 0
+*
+* @description
 * Simple pagination inspired by Rdio, great for apps and search results. The large block 
 * is hard to miss, easily scalable, and provides large click areas.
 *
-* @demo demos/breadcrumbs/demo.html
+* @demo demos/pagination/default-pagination/demo.html
+*
+* ### Disabled and active states
+* Links are customizable for different circumstances. Use .disabled for unclickable links 
+* and .active to indicate the current page.
+*
+* @demo demos/pagination/disabled-active-states/demo.html
+*
+* You can optionally swap out active or disabled anchors for <span>, or omit the anchor in 
+* the case of the previous/next arrows, to remove click functionality while retaining intended styles.
+*
+```
+<nav>
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      <span>1 <span class="sr-only">(current)</span></span>
+    </li>
+    ...
+  </ul>
+</nav>
+```
+*
+* ### Sizing
+* Fancy larger or smaller pagination? Add ```.pagination-lg``` or ```.pagination-sm``` for additional sizes.
+*
+* @demo demos/pagination/sizing/demo.html
 **/
 
 // Pagination Variables
@@ -32,6 +68,30 @@
 @pagination-disabled-bg:               #fff;
 @pagination-disabled-border:           #ddd;
 
+/**
+* @styles pager Pager
+* @parent pagination 1
+*
+* @description
+* Quick previous and next links for simple pagination implementations with light markup and styles. 
+* It's great for simple sites like blogs or magazines.
+*
+* ### Default example
+* By default, the pager centers links.
+*
+* @demo demos/pagination/pager/demo.html
+* 
+* ### Aligned links
+* Alternatively, you can align each link to the sides:
+*
+* @demo demos/pagination/aligned-links/demo.html
+*
+* ### Optional disabled state
+* Pager links also use the general ```.disabled``` utility class from the pagination.
+*
+* @demo demos/pagination/disabled-state/demo.html
+*
+**/
 
 // Pager Variables
 
