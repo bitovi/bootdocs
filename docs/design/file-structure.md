@@ -8,6 +8,7 @@ bootdocs
     docs
         design                  // Markdown files used on the design section of the style guide
         css                     // Markdown files used on the css section of the style guide
+
         components              // Markdown files used on the components section of the style guide
 
     less
@@ -17,6 +18,7 @@ bootdocs
     node_modules
         bootstrap
     styleguide                  // Output directory of the style guide
+
 ```
 
 New styles should be written following these rules:

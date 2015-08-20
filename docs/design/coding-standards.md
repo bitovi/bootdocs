@@ -41,14 +41,44 @@
     </tr>
 </table>
 
+<<<<<<< HEAD
+=======
+### Example
+
+```
+button,
+.nemo-button {
+    background: #999 url('/images/bg.svg');
+    border: 0;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    font: 200 1.6rem 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .1rem;
+    margin: 0;
+    padding: .5rem;
+    text-decoration: none;
+    transition: all .4s;
+}
+```
+>>>>>>> current-docs
 
 ## Performance & Maintainability
 
 - Must not use  **!important**  to override selector specificity. Instead, adjust the selectors accordingly, or refactor the styles.
+<<<<<<< HEAD
 - Minimize selectors. Don't use  ```div.main-nav ul li.item a``` where  ```.main-nav``` would suffice.
 - Do not use hacks or fallbacks for browsers that are not supported:
     - No star hacks
     - No underscore hacks
+=======
+- Minimize selectors. Don't use  ```div.main-nav ul li.item a``` where  ```.main-nav``` a would suffice.
+- Do not use hacks or fallbacks for browsers we don't support:
+    - No star hacks
+    - No underscore hacks
+    - No fallback needed for rgba() colors
+    - We are using [Autoprefixer](https://github.com/postcss/autoprefixer) to automatically add vendor prefixes as needed, so only use non-prefixed, W3C-proposed properties
+>>>>>>> current-docs
 
 
 ## Syntax
