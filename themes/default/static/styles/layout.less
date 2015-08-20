@@ -10,7 +10,6 @@
 /**
 * @styles header Header
 *
-* @demo demos/header.html
 **/
 header {
   background-color: @color-header;
@@ -20,8 +19,7 @@ header {
   .container {
     position: relative;
     height: @header-height;
-    text-align: left;  
-    margin: 0 @gutter;
+    text-align: left;
     width: 100%; //overriding standard container width
   }
 
@@ -45,7 +43,6 @@ header {
 /**
 * @styles header-nav Header Nav
 *
-* @demo demos/header-nav.html
 **/
 header .main-nav {
   list-style-type: none;
@@ -106,7 +103,6 @@ header .main-nav {
 * @description
 * This dropdown shows when hovering the logo.
 *
-* @demo demos/header-dropdown.html
 **/
 header {
   .dropdown-menu {
@@ -153,11 +149,11 @@ header {
 * This dropdown menu shows when hovering the Bitovi bits icon.
 * Links placed on this menu link out the external Bitovi sites.
 *
-* @demo demos/header-bitovi-menu.html
 **/
 header {
   .bitovi-menu {
     display: inline-block;
+    margin-right: @gutter;
     .dropdown-menu {
       right: 0;
       left: auto;
@@ -189,6 +185,7 @@ header {
   .logo-menu {
     position: relative;
     display: inline-block;
+    margin-left: @gutter;
   }
   .menu-container {
     position: relative;
@@ -200,14 +197,11 @@ header {
     display: block;
     visibility: visible;
   }
-  .pull-right {
-    position: absolute;
-    right: @gutter;
-    top: 0;
-  }
 }
 
-
+.pull-right {
+  float: right;
+}
 
 // Used to structure the main parts of a page, such as the header, the body, and the footer.
 .container {
