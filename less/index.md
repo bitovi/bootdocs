@@ -1,4 +1,4 @@
 @page styles Styles
-@group overview Overview
+@group css CSS
 
 This is our guide BRO.
