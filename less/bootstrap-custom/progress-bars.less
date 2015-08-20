@@ -1,0 +1,52 @@
+/**
+  * @stylesheet progress-bars.less Progress bars
+  * @parent Components
+  *
+  * @description
+  * Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+  *
+  * ### Cross-browser compatibility
+  * Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
+  *
+  * ## Basic example
+  * Default progress bar.
+  *
+  * ```
+  * <div class="progress">
+  *  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  *   <span class="sr-only">60% Complete</span>
+  *  </div>
+  * </div>
+  * ```
+  * 
+  * @demo demos/progress-bars/demo.html
+  * 
+  * ## With label
+  * Remove the `<span>` with `.sr-only` class from within the progress bar to show a visible percentage.
+  *
+  * @demo demos/progress-bars-with-label/demo1.html
+  *
+  * To ensure that the label text remains legible even for low percentages, consider adding a `min-width` to the progress bar.
+  * 
+  * @demo demos/progress-bars-with-label/demo2.html
+  *
+  * ## Contextual alternatives
+  * Progress bars use some of the same button and alert classes for consistent styles.
+  * 
+  * @demo demos/progress-bars-contextual/demo.html
+  *
+  * ## Striped
+  * Uses a gradient to create a striped effect. Not available in IE9 and below.
+  * 
+  * @demo demos/progress-bars-striped/demo.html
+  *
+  * ## Animated
+  * Add `.active` to `.progress-bar-striped` to animate the stripes right to left. Not available in IE9 and below.
+  * 
+  * @demo demos/progress-bars-aninmated/demo.html
+  *
+  * ## Stacked
+  * Place multiple bars into the same `.progress` to stack them.
+  * 
+  * @demo demos/progress-bars-stacked/demo.html
+**/
