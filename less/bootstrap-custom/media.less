@@ -1,0 +1,49 @@
+/**
+  * @stylesheet media.less Media objects
+  * @parent components 17
+  *
+  * Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.
+  *
+  * ## Default media
+  * The default media displays a media object (images, video, audio) to the left or right of a content block.
+  *
+  * @demo demos/media/demo.html
+  *
+  * The classes `.pull-left` and `.pull-right` also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to `.media-left` and `.media-right`, except that `.media-right` should be placed after the `.media-body` in the html.
+  *
+  * ## Media alignment
+  * The images or other media can be aligned top, middle, or bottom. The default is top aligned.
+  *
+  * ```
+  * <div class="media">
+  *  <div class="media-left media-middle">
+  *   <a href="#">
+  *     <img class="media-object" src="..." alt="...">
+  *   </a>
+  *  </div>
+  *  <div class="media-body">
+  *  <h4 class="media-heading">Middle aligned media</h4>
+  *    ...
+  *  </div>
+  * </div>
+  * ```
+  *
+  * ## Media list
+  * With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).
+  *
+  * ```
+  * <ul class="media-list">
+  *  <li class="media">
+  *   <div class="media-left">
+  *     <a href="#">
+  *       <img class="media-object" src="..." alt="...">
+  *     </a>
+  *   </div>
+  *   <div class="media-body">
+  *     <h4 class="media-heading">Media heading</h4>
+  *     ...
+  *   </div>
+  * </li>
+  * </ul>
+  * ``` 
+**/

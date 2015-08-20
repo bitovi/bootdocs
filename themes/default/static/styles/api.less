@@ -128,9 +128,7 @@
 // Docs General Styles
 .docs { 
   .content.docs {
-    //width: 662px;
-    margin-top: 20px;
-    padding: @gutter;
+    padding: 0 @gutter;
     
     ul, ol:not(.linenums) {
       margin-left: 0;
@@ -171,7 +169,7 @@
 .container.api {
   display: table;
   table-layout: fixed;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .container.api > * {
   display: table-cell !important;
@@ -378,43 +376,44 @@
 
 
 // demo
-.docs {
-  .demo {
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li.tab {
-      display: block;
-      float: left;
-      padding: 6px 10px;
-      border-radius: @border-radius @border-radius 0 0;
-      &:first-of-type {
-        margin-left: 5px;
-      } 
-    }
-    li.tab.active {
-      color: @clear;
-      font-weight: bold;
-      background-color: @nightRain;
-      .text-shadow;
-    }
-    div.tab-content {
-      clear: both;
-    }
-    iframe {
-      width: 100%;
-      border: @border;
-      border-radius: @border-radius;
-    }
+.demo {
+  border: @border;
+  border-radius: @border-radius;
+  background-color: @fog;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li.tab {
+    display: inline-block;
+    padding: 10px 15px 0;
+    color: @darkSkies;
+    cursor: pointer;
+  }
+  li.tab.active {
+    font-weight: bold;
+  }
+  div.tab-content {
+    clear: both;
+  }
+  iframe {
+    background-color: @clear;
+    width: 100%;
+  }
+  iframe, pre {
+    border-radius: 0;
+    border: none;
+    border-top: @border;
+    margin-bottom: 0px;
   }
   body.style-demo {
     background-color: @clear;
     padding: 10px;
   }
 }
-
-
+  .demo_wrapper {
+    margin-bottom: 20px;
+  }
 #low {
   .container;
   font-size: 12px;
