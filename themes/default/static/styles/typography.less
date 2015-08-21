@@ -105,7 +105,10 @@ ol{
 ul ul,ol ol,ul ol,ol ul{
   margin-bottom:0;
 }
-
+li {
+  line-height: @line-height;
+  margin-bottom: 10px;
+}
 sup{
   vertical-align:baseline;
   position:relative;
@@ -119,8 +122,10 @@ sub{
 }
 
 blockquote{
-  margin:0 2.5em;
+  margin: @gutter;
   font-style:normal;
+  border-left: 5px solid @cloud;
+  padding-left: @gutter/2;
 }
 
 blockquote em,blockquote cite{
