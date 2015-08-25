@@ -1,9 +1,61 @@
 /**
   * @stylesheet input-groups.less Input Groups
-  * @parent Styles
+  * @parent components 4
   *
   * @description
-  * Extend form controls by adding text or buttons before, after, or on both sides of any text-based <input>. Use .input-group with an .input-group-addon to prepend or append elements to a single .form-control.
+  * Extend form controls by adding text or buttons before, after, or on both sides
+  * of any text-based `<input>`. Use `.input-group` with an `.input-group-addon`
+  * to prepend or append elements to a single .form-control.
   *
-  * @demo less/demos/input-groups/demo.html
+  **/
+  /**
+  @styles basic-example
+  @parent input-groups.less 1
+  * ## Basic Example
+  * Place one add-on or button on either side of an input. You may also place one
+  * on both sides of an input.
+  *
+  * **We do not support multiple add-ons on a single side.**
+  *
+  * **We do not support multiple form-controls in a single input group.**
+  * @demo demos/input-groups/basic-example/demo.html
+  **/
+  /**
+  @styles sizing
+  @parent input-groups.less 2
+  * ## Sizing
+  * Add the relative form sizing classes to the `.input-group` itself and contents
+  * within will automatically resize—no need for repeating the form control size
+  * classes on each element.
+  * @demo demos/input-groups/sizing/demo.html
+  **/
+  /**
+  @styles checkboxes-radio-addons
+  @parent input-groups.less 3
+  * ## Checkboxes and radio addons
+  * Place any checkbox or radio option within an input group's addon instead
+  * of text.
+  * @demo demos/input-groups/checkboxes-radios/demo.html
+  **/
+  /**
+  @styles button-addons
+  @parent input-groups.less 4
+  * ## Button Addons
+  * Buttons in input groups are a bit different and require one extra level of
+  * nesting. Instead of `.input-group-addon`, you'll need to use `.input-group-btn`
+  * to wrap the buttons. This is required due to default browser styles that
+  * cannot be overridden.
+  * @demo demos/input-groups/button-addons/demo.html
+  **/
+  /**
+  @styles button-dropdowns
+  @parent input-groups.less 5
+  * ## Button with Dropdowns
+  * @demo demos/input-groups/button-dropdowns/demo.html
+  **/
+  /**
+  @styles segmented-buttons
+  @parent input-groups.less 6
+  * ## Segmented Buttons
+  * @demo demos/input-groups/segmented-buttons/demo.html
   **/
