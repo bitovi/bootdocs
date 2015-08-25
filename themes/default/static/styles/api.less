@@ -40,12 +40,12 @@
     display: block;
     .heading {
       position: relative;
-      margin: 0; 
+      margin: 0;
       h1 {
         display: inline-block;
         max-width: 550px;
         word-wrap: break-word;
-      }     
+      }
       .module {
         position: absolute;
         right: 0;
@@ -80,7 +80,7 @@
     ul.links {
       margin-bottom: 16px;
     }
-    .links, 
+    .links,
     .tags {
       list-style: none;
       margin: 0;
@@ -126,10 +126,10 @@
 
 
 // Docs General Styles
-.docs { 
+.docs {
   .content.docs {
     padding: 0 @gutter;
-    
+
     ul, ol:not(.linenums) {
       margin-left: 0;
       .p;
@@ -244,7 +244,7 @@
       font-style: normal;
       float: right;
     }
-    
+
     code {
       background-color: transparent;
       color: @clear;
@@ -265,7 +265,7 @@
   border: @border;
   margin-bottom: 10px;
   border-radius: @border-radius;
-  
+
   a.sig {
     text-decoration: none;
     color: @night;
@@ -280,7 +280,7 @@
       color: black;
     }
   }
-  
+
   p {
     color: @thunderStorm;
     line-height: 15px;
@@ -294,7 +294,7 @@
 /**
 * @styles parameters-returns Parameters and Returns
 *
-* @description 
+* @description
 * Parameters and returns are shown inside of `.signature` but their styles are not dependant on it.
 *
 **/
@@ -327,7 +327,6 @@
   .parameters li:first-child h4,
   .returns h4  {
       border-radius: 5px 5px 0 0;
-
   }
   .parameters h5, .returns h5 {
     font-size: 14px;
@@ -345,7 +344,7 @@
   .parameters .options {
     margin-right: 50px;
   }
-  .parameters .options .option, 
+  .parameters .options .option,
   .returns .options .option {
     margin: 0 -10px 15px;
     list-style-type: none;
@@ -364,7 +363,7 @@
 }
 .docs .parameters .description,
 .docs .returns .description {
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 .docs .returns .description {
   margin-top: 15px;
@@ -378,22 +377,33 @@
 
 // demo
 .demo {
-  border: @border;
-  border-radius: @border-radius;
-  background-color: @fog;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: @border;
+  padding-bottom: 15px;
+
   ul {
     list-style: none;
     padding: 0;
+    border-bottom: @border;
+    padding-left: 10px;
   }
   li.tab {
     display: inline-block;
-    padding: 10px 15px 0;
+    padding: 10px 15px;
     color: @darkSkies;
     cursor: pointer;
-    margin-bottom: 0;
+    border: @border;
+    margin-bottom: -1px;
+    border-bottom: 0;
+    background-color: @cloud;
+    margin-left: 5px;
   }
   li.tab.active {
     font-weight: bold;
+    color: @rain;
+    background-color: white;
   }
   div.tab-content {
     clear: both;
@@ -402,15 +412,18 @@
     background-color: @clear;
     width: 100%;
   }
-  iframe, pre {
+  iframe {
     border-radius: 0;
     border: none;
-    border-top: @border;
     margin-bottom: 0px;
   }
-}
-body .bs-example, body.style-demo {
+  pre {
+    margin-bottom: 0px;
+  }
+  body.style-demo {
+    background-color: @clear;
     padding: 10px;
+  }
 }
   .demo_wrapper {
     margin-bottom: 20px;
