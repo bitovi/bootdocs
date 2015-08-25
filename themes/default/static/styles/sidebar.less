@@ -160,14 +160,24 @@
 .sidebar {
   .api {
     li.active > a.sidebar-title  {
-      /* display: none; */
+      color: #000;
     }
-/*    li.active:nth-child(2) > a.sidebar-title,
-    li.active:nth-child(3) > a.sidebar-title,
-    li.active:nth-child(4) > a.sidebar-title,
-    li.active:nth-child(5) > a.sidebar-title, */
+
+    // hides the very first parent
     li.active.parent:nth-child(-n+1) > a.sidebar-title {
        display: none;
+    }
+    li.active:nth-child(2) > a.sidebar-title {
+      font-size: 24px;
+    }
+    li.active:nth-child(3) > a.sidebar-title {
+      font-size: 22px;
+    }
+    li.active:nth-child(4) > a.sidebar-title {
+      font-size: 20px;
+    }
+    li.active:nth-child(5) > a.sidebar-title {
+      font-size: 18px;
     }
 
     &.cascading {
