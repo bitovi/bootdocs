@@ -17,3 +17,32 @@ Grid systems are used for creating page layouts through a series of rows and col
 - If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 - Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a `.col-lg-*` class is not present.
 - Look to the examples for applying these principles to your code.
+
+## Media Queries
+
+We use the following media queries in our Less files to create the key breakpoints in our grid system.
+
+```
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+\@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+\@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+\@media (min-width: @screen-lg-min) { ... }
+```
+
+We occasionally expand on these media queries to include a `max-width` to limit CSS to a narrower set of devices.
+
+<pre>
+    <code>
+        \@media (max-width: @screen-xs-max) { ... }
+        \@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+        \@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+        \@media (min-width: @screen-lg-min) { ... }
+    </code>
+</pre>
