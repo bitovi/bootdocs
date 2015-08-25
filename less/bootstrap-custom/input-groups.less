@@ -7,6 +7,35 @@
   * of any text-based `<input>`. Use `.input-group` with an `.input-group-addon`
   * to prepend or append elements to a single .form-control.
   *
+  * ##### Textual `<input>`s only
+  * Avoid using `<select>` elements here as they cannot be fully styled in
+  * WebKit browsers.
+  *
+  * Avoid using `<textarea>` elements here as their rows attribute will not be
+  * respected in some cases.
+  *
+  * #### Tooltips & popovers in input groups require special setting
+  * When using tooltips or popovers on elements within an `.input-group`, you'll
+  * have to specify the option container: `body` to avoid unwanted side effects
+  * (such as the element growing wider and/or losing its rounded corners when the
+  * tooltip or popover is triggered).
+  *
+  * #### Don't mix with other components
+  * Do not mix form groups or grid column classes directly with input groups.
+  *
+  * Instead, nest the input group inside of the form group or grid-related element.
+  *
+  * #### Always add labels
+  * Screen readers will have trouble with your forms if you don't include a label
+  * for every input. For these input groups, ensure that any additional label or
+  * functionality is conveyed to assistive technologies.
+  *
+  * The exact technique to be used (`<label>` elements hidden using the `sr-only class`.,
+  * or use of the `aria-label`, `aria-labelledby`, `aria-describedby`, `title`
+  * or `placeholder` attribute) and what additional information will need to be
+  * conveyed will vary depending on the exact type of interface widget you're
+  * implementing. The examples in this section provide a few suggested,
+  * case-specific approaches.
   **/
   /**
   @styles basic-example
