@@ -34,7 +34,7 @@
 *
 **/
 
-   .versions, 
+   .versions,
    #versions {
     position: absolute;
     right: 5px;
@@ -79,17 +79,17 @@
       color: @thunderStorm;
     }
     > li > ul {
-      display: none;
+      /* display: none; */
     }
     > li.active {
       position: relative;
       z-index: 0;
-      
+
       > ul {
         display: block;
       }
     }
-    
+
     li.active.collapsed > :not(a) {
       display:none;
     }
@@ -160,14 +160,25 @@
 .sidebar {
   .api {
     li.active > a.sidebar-title  {
-      display: none;
+      color: #000;
     }
-    li.active:nth-child(2) > a.sidebar-title,
-    li.active:nth-child(3) > a.sidebar-title,
-    li.active:nth-child(4) > a.sidebar-title,
+
+    // hides the very first parent
+    li.active.parent:nth-child(-n+1) > a.sidebar-title {
+       display: none;
+    }
+    li.active:nth-child(2) > a.sidebar-title {
+      font-size: 24px;
+    }
+    li.active:nth-child(3) > a.sidebar-title {
+      font-size: 22px;
+    }
+    li.active:nth-child(4) > a.sidebar-title {
+      font-size: 20px;
+    }
     li.active:nth-child(5) > a.sidebar-title {
-      display: none;    
-    } 
+      font-size: 18px;
+    }
 
     &.cascading {
       > .active > a {
@@ -179,8 +190,8 @@
         margin-left: 0px;
         margin-right: 0px;
       }
-              
-    } // cascading ends 
+
+    } // cascading ends
   } // api ends
 } // sidebar ends
 
