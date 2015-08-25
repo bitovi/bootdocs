@@ -8,16 +8,20 @@ module.exports = function(grunt) {
     copy: {
       'demos': {
         expand: true,
-        cwd: 'author/styles/style-guide/',
+        cwd: '',
         src: 'demos/**/*',
-        dest: 'docs/demos/'
+        dest: 'styleguide/'
       }
     },
     
   });
 
   grunt.loadNpmTasks('documentjs');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  
   grunt.renameTask('documentjs', 'documentjs-orig');
+  
+  grunt.registerTask('default', ['documentjs-orig', 'copy:demos']);
   grunt.registerTask('documentjs', ['documentjs-orig', 'copy:demos']);
 
 };
