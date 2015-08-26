@@ -23,6 +23,7 @@
   *
   * @demo demos/forms-inline/demo1.html
   * @demo demos/forms-inline/demo2.html
+  * @demo demos/forms-inline/demo3.html
   * 
   * ## Horizontal form
   * Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding `.form-horizontal` to the form (which doesn't have to be a `<form>`). Doing so changes `.form-groups` to behave as grid rows, so no need for `.row`.
@@ -38,16 +39,32 @@
   * > #### Type declaration required
   * > Inputs will only be fully styled if their `type` is properly declared.
   *
-  * @demo demos/forms-inputs/demo.html
+  * **Example:**
+  *
+  * ```
+  * <input type="text" class="form-control" placeholder="Text input">
+  * ```
+  *
+  * **Results in:**
+  * @iframe demos/forms-inputs/demo.html 50
+  *
   *
   * > #### Input groups
   * > To add integrated text or buttons before and/or after any text-based `<input>`, check out the input group component.
   *
+  *
   * ### Textarea
   * Form control which supports multiple lines of text. Change `rows` attribute as necessary.
   *
-  * @demo demos/forms-textarea/demo.html
+  * **Example:**
+  *
+  * ```
+  * <textarea class="form-control" rows="3"></textarea>
+  * ```
+  * **Results in:**
+  * @iframe demos/forms-textarea/demo.html 80
   * 
+  *
   * ### Checkboxes and radios
   * Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
   * 
@@ -62,29 +79,63 @@
   *
   * #### Checkboxes and radios without label text
   * Should you have no text within the `<label>`, the input is positioned as you'd expect. **Currently only works on non-inline checkboxes and radios.** Remember to still provide some form of label for assistive technologies (for instance, using `aria-label`).
+  *
   * @demo demos/forms-checkboxes-radios/without-label.html
   *
   * ### Selects
   * Note that many native select menus-namely in Safari and Chrome-have rounded corners that cannot be modified via `border-radius` properties.
-  * @demo demos/forms-selects/demo1.html
+  *
+  * **Example:**
+  *
+  * ```
+  * <select class="form-control">
+  *  <option>1</option>
+  *  <option>2</option>
+  *  <option>3</option>
+  *  <option>4</option>
+  *  <option>5</option>
+  * </select>
+  * ```
+  * **Results in:**
+  * @iframe demos/forms-selects/demo1.html 50
+  *
+  *
   *
   * For `<select>` controls with the `multiple attribute`, multiple options are shown by default.
-  * @demo demos/forms-selects/demo2.html
+  * 
+  * **Example:**
+  *
+  * ```
+  * <select multiple class="form-control">
+  *  <option>1</option>
+  *  <option>2</option>
+  *  <option>3</option>
+  *  <option>4</option>
+  *  <option>5</option>
+  * </select>
+  * ```
+  * **Results in:**
+  * @iframe demos/forms-selects/demo2.html 105
+  *
   *
   * ## Static control
   * When you need to place plain text next to a form label within a form, use the `.form-control-static class` on a `<p>`.
-  * @demo demos/forms-static/demo1.html
+  *
+  * #### Example
+  * 
+  * @demo demos/forms-static/demo1.html 180
+  *
+  * #### Example
+  *
   * @demo demos/forms-static/demo2.html
+  *
   *
   * ## Focus state
   * We remove the default `outline` styles on some form controls and apply a `box-shadow` in its place for `:focus`.
-  * @demo demos/forms-focus/demo.html
   *
-  * > #### Demo `:focus` state
-  * > The above example input uses custom styles in our documentation to demonstrate the `:focus` state on a `.form-control`.
-  * 
   * ## Disabled state
   * Add the `disabled` boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a `not-allowed` cursor.
+  *
   * @demo demos/forms-disabled/demo.html
   *
   * ### Disabled fieldsets
@@ -100,6 +151,7 @@
   *
   * ## Readonly state
   * Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
+  *
   * @demo demos/forms-readonly/demo.html
   * 
   * ## Validation states
@@ -126,11 +178,14 @@
   * @demo demos/forms-validation/icons.html
   * 
   * ### Optional icons in horizontal and inline forms
+  *
   * @demo demos/forms-validation/icons-horizontal.html
+  *
   * @demo demos/forms-validation/icons-inline.html
   * 
   * ### Optional icons with hidden `.sr-only` labels
   * If you use the `.sr-only` class to hide a form control's `<label>` (rather than using other labelling options, such as the `aria-label` attribute), Bootstrap will automatically adjust the position of the icon once it's been added.
+  *
   * @demo demos/forms-validation/icons-hidden.html
   * 
   * ## Control sizing
@@ -138,14 +193,17 @@
   *
   * ### Height sizing
   * Create taller or shorter form controls that match button sizes.
+  *
   * @demo demos/forms-sizing/demo.html
   * 
   * ### Horizontal form group sizes
   * Quickly size labels and form controls within `.form-horizontal` by adding `.form-group-lg` or `.form-group-sm`.
+  *
   * @demo demos/forms-sizing/horizontal.html
   * 
   * ### Column sizing
   * Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.
+  *
   * @demo demos/forms-sizing/column.html
   * 
   * ## Help text
