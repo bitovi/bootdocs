@@ -5,12 +5,9 @@
     },
   "sites": {
     "styles": {
-        "glob": "{less,docs}/**/*.{css,less,md}",
+        "glob": "{less,markdown}/**/*.{css,less,md}",
         "dest": "styleguide",
         "parent": "styles"
     }
   }
 }
-
-
-
