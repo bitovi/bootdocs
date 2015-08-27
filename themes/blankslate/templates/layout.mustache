@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>{{makeParentTitle}} {{#if title}}- {{title}} {{else}} {{#if name}}- {{name}}{{/if}}{{/if}}</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	{{^devBuild}}
+  	<link rel="stylesheet" type="text/css" href="./static/bundles/static.css">
+	{{/devBuild}}
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1>{{makeParentTitle}}</h1>
+        <a href="index.html">Home</a> • <a href="accessibility.html">Design</a> • <a href="Overview.html">CSS</a> • <a href="glyphicons.less.html">Components</a>
+		</nav>
+	</header>
+  <hr />
+	{{{content}}}
+	
+	<footer>
+	  <hr />
+	  <p>Built by <a href="http://bitovi.com/">Bitovi</a> using <a href="http://documentjs.com/">DocumentJS</a>.
+	</footer>
+	
+	<script type="text/javascript">
+		var docObject = {{{docObjectString}}};
+	</script>
+	
+	{{#if devBuild}}
+		<script type='text/javascript' 
+				data-main="static"
+				data-config="./static/config.js"
+				src="./static/steal/steal.js"></script>
+	{{else}}
+
+		<script type='text/javascript' 
+				data-main="static"
+				data-config="./static/config.js"
+				src="./static/steal.production.js"
+	    		bundles-path="bundles"></script>
+	{{/if}}
+</body>
+
+</html>

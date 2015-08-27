@@ -1,0 +1,20 @@
+<div class="list-group"> 
+	{{#getActiveAndParents}}
+		{{#each parents}}
+		<a class="list-group-item active parent" href="{{urlTo name}}" data-search="{{#if title}}{{title}}{{else}}{{{name}}}{{/if}}">
+				{{makeTitle}}
+			{{#if ../active.hideChildrenInMenu}}
+				{{> active-menu.mustache}}
+			{{/if}}
+		</a>
+		{{/each}}
+		{{#active}}
+			{{^if hideChildrenInMenu}}
+			<a class="list-group-item active" href="{{urlTo name}}" data-search="{{#if title}}{{title}}{{else}}{{{name}}}{{/if}}">
+				{{makeTitle}}
+			{{> active-menu.mustache}}
+		</a>
+			{{/if}}
+		{{/active}}
+	{{/getActiveAndParents}}
+</div>
