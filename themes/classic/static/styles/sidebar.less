@@ -38,7 +38,7 @@
 * @demo demos/versions.html
 **/
 .sidebar {
-   .versions, 
+   .versions,
    #versions {
     position: absolute;
     right: 5px;
@@ -95,12 +95,12 @@
     > li.active {
       position: relative;
       z-index: 0;
-      
+
       > ul {
         display: block;
       }
     }
-    
+
     li.active.collapsed > :not(a) {
       display:none;
     }
@@ -133,7 +133,7 @@
     > li > a:hover {
       color: @night;
     }
-    
+
     li li.parent {
       text-indent: 30px;
     }
@@ -184,8 +184,8 @@
       height : 14px;
       width: 14px;
       z-index : 1;
-      width: 0; 
-      height: 0; 
+      width: 0;
+      height: 0;
       border-top: 20px solid transparent;
       border-bottom: 20px solid transparent;
       border-left: 20px solid @sidebarBackground
@@ -229,20 +229,20 @@
     li.active:nth-child(5) > a.sidebar-title {
       font-size: 18px;
       border-radius: 0;
-      margin:-20px 0 20px 0;      
-    } 
+      margin:-20px 0 20px 0;
+    }
     li.active:nth-child(2) > a.sidebar-title {
       background: lighten(@darkSkies, 10%);
-    } 
+    }
     li.active:nth-child(3) > a.sidebar-title {
-      background: lighten(@darkSkies, 20%);   
+      background: lighten(@darkSkies, 20%);
     }
     li.active:nth-child(4) > a.sidebar-title {
-      background: lighten(@darkSkies, 30%);   
-    }        
+      background: lighten(@darkSkies, 30%);
+    }
     li.active:nth-child(5) > a.sidebar-title {
-      background: lighten(@darkSkies, 40%);   
-    }  
+      background: lighten(@darkSkies, 40%);
+    }
 
     &.cascading {
       > .active > a {
@@ -267,8 +267,8 @@
         left:10px;
         top:30px;
         z-index : -1;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 20px solid @darkSkies;
@@ -278,14 +278,14 @@
       }
       > .active:nth-child(3):before {
         border-top: 20px solid lighten(@darkSkies, 20%);
-      }   
+      }
       > .active:nth-child(4):before {
         border-top: 20px solid lighten(@darkSkies, 30%);
       }
       > .active:nth-child(5):before {
         border-top: 20px solid lighten(@darkSkies, 40%);
-      }               
-    } // cascading ends 
+      }
+    } // cascading ends
   } // api ends
 } // sidebar ends
 
