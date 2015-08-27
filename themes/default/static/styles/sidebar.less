@@ -8,12 +8,13 @@
 
 // Sidebar structure
 .sidebar {
-  width:  220px;
-  margin: 20px 3px 20px 30px;
+  width:  150px;
+  margin: 20px 3px 20px 0px; // this does nothing because it's a table-cell
   position: relative;
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 50px;
+  left:-23px;
   ul {
     list-style-type: none;
     margin: 0;
@@ -134,17 +135,17 @@
     li li.active > a:hover {
       background: none;
     }
-    li li.active > a:before {
+    li li.active:before {
       position: absolute;
       content: '';
       display: block;
       border-left: 4px solid @rain;
-      width: 5px;
+      width: 4px;
       height: 20px;
-      left: 5px;
-      top: 5px;
+      left: -4px;
+      top: 1px;
     }
-    li li li.active > a:before {
+    li li li.active:before {
       left: 20px;
     }
   } // api ends
@@ -159,8 +160,16 @@
 **/
 .sidebar {
   .api {
+    li a {
+      font-size: 14px;
+      line-height: 20px;
+      text-indent:0;
+      padding-left:10px;
+    }
+
     li.active > a.sidebar-title  {
       color: #000;
+      margin-bottom:20px;
     }
 
     // hides the very first parent
