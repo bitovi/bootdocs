@@ -1,0 +1,21 @@
+{{#if children.length}}
+	
+		{{#eachOrderedChildren children}}
+			{{^if hide}}
+				{{#ifGroup}}
+					<li class="heading search-container">
+						<span>{{makeTitle}}</span>
+						{{> active-menu.mustache}}
+					</li>
+				{{/ifGroup}}
+				{{^ifGroup}}
+					<a class=" list-group-item {{type}} {{#ifActive}} active {{^if hideChildrenInMenu}}{{#children.length}} parent{{/children.length}}{{/if}}{{/ifActive}} " href="{{urlTo name}}" data-search="{{#if title}}{{title}}{{else}}{{{name}}}{{/if}}">
+						{{makeTitle}}
+					</a>
+				
+				{{/ifGroup}}
+			
+			{{/if}}
+		{{/eachOrderedChildren}}
+	
+{{/if}}
