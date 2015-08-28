@@ -1,0 +1,67 @@
+/**
+  * @stylesheet code.less Code
+  * @parent css 4
+  *
+  * @description
+  *
+  *
+  **/
+  /**
+  @styles code-inline
+  @parent code.less 1
+  * ## Inline
+  * Wrap inline snippets of code with `<code>`.
+  *
+  * @demo demos/code-inline/demo.html
+  **/
+  /**
+  @styles code-user-input
+  @parent code.less 2
+  * ## User input
+  * Use the `<kbd>` to indicate input that is typically entered via keyboard.
+  *
+  * @demo demos/code-user-input/demo.html
+  **/
+  /**
+  @styles code-basic-block
+  @parent code.less 3
+  * ## Basic Block
+  * Use `<pre>` for multiple lines of code. Be sure to escape any angle brackets
+  * in the code for proper rendering.
+  *
+  * @demo demos/code-basic-block/demo.html
+  *
+  * You may optionally add the `.pre-scrollable` class, which will set a `max-height`
+  * of 350px and provide a y-axis scrollbar.
+  **/
+  /**
+  @styles code-variables
+  @parent code.less 4
+  * ## Variables
+  * Use For indicating variables use the `<var>` tag.
+  *
+  * @demo demos/code-variables/demo.html
+  **/
+  /**
+  @styles code-sample-output
+  @parent code.less 5
+  * ## Sample Output
+  * For indicating blocks sample output from a program use the `<samp>` tag.
+  *
+  * @demo demos/code-variables/demo.html
+  **/
+
+  //== Code
+  //
+  //##
+
+  @code-color:                  #c7254e;
+  @code-bg:                     #f9f2f4;
+
+  @kbd-color:                   #fff;
+  @kbd-bg:                      #333;
+
+  @pre-bg:                      #f5f5f5;
+  @pre-color:                   @gray-dark;
+  @pre-border-color:            #ccc;
+  @pre-scrollable-max-height:   340px;
