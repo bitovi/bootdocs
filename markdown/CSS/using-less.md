@@ -1,4 +1,4 @@
-\@page using-less Using Less
+@page using-less Using Less
 @parent css 11
 Bootstrap's CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source Less files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework.
 
