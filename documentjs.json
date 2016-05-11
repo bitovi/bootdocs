@@ -1,7 +1,7 @@
 {
   "siteDefaults": {
-      "templates": "themes/default/templates",
-      "static": "themes/default/static"
+      "templates": "themes/bootstrap3/templates",
+      "static": "themes/bootstrap3/static"
     },
   "sites": {
     "styles": {

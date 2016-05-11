@@ -1,4 +1,7 @@
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('documentjs');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.initConfig({
     clean: {
@@ -13,15 +16,21 @@ module.exports = function(grunt) {
         dest: 'styleguide/'
       }
     },
-    
+    connect: {
+			server: {
+				options: {
+					livereload: true,
+					open: true,
+					port: 4000,
+					keepalive: true
+				}
+			}
+		}
   });
-
-  grunt.loadNpmTasks('documentjs');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   
   grunt.renameTask('documentjs', 'documentjs-orig');
   
-  grunt.registerTask('default', ['documentjs-orig', 'copy:demos']);
-  grunt.registerTask('documentjs', ['documentjs-orig', 'copy:demos']);
+  grunt.registerTask('default', ['documentjs-orig', 'copy:demos', 'connect:server']);
+  grunt.registerTask('documentjs', ['documentjs-orig', 'copy:demos', 'connect:server']);
 
 };
